@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Editing</h1>
+  <%= simple_form_for @review do |f| %>
+  <%= f.input :content %>
+  <%= f.input :rating %>
+  <%= f.submit "Update review!", class: "btn btn-primary" %>
+  <% end %>
+</div>
+

@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Reviews</h1>
+  <%= link_to "Add a review!", new_restaurant_review_path  %>
+  <hr>
+  <div class="row">
+    <% @reviews.each do |review| %>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="card">
+        <%= link_to review.content, review_path(review) %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+</div>
